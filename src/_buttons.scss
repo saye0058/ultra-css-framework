@@ -1,3 +1,5 @@
+@use "variables";
+=======
 
 // Button styles - Serhat
 .btn {
@@ -54,7 +56,7 @@
     }
 
 }
-
+//liams button
 .btn{
     border: $button-border-radius;
     background-color: $secondary-color;
@@ -62,5 +64,86 @@
 
     &.hover{
         background-color: $warning-color;
+    }
+}//^
+
+.btn {
+    display: inline-block;
+    padding: variables.$button-padding-vertical variables.$button-padding-horizontal;
+    border-radius: variables.$button-border-radius;
+    border: variables.$border-width solid variables.$secondary-color;
+    background-color: variables.$secondary-color;
+    color: variables.$light-color;
+    font-family: variables.$font-family-base;
+    font-size: variables.$font-size-base;
+    font-weight: variables.$font-weight-normal;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        background-color: variables.$warning-color;
+        border-color: variables.$warning-color;
+        color: variables.$light-color;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: variables.$box-shadow;
+        background-color: variables.$primary-color;
+        color: variables.$light-color;
+        border-color: variables.$primary-color;
+    }
+
+    &:active {
+        background-color: scale-color(variables.$warning-color, $lightness: -10%);
+        border-color: scale-color(variables.$warning-color, $lightness: -10%);
+        color: variables.$light-color;
+    }
+
+    &.disabled,
+    &:disabled {
+        background-color: variables.$border-color;
+        color: variables.$dark-color;
+        border-color: variables.$border-color;
+        cursor: not-allowed;
+        opacity: 0.7;
+    }
+
+    &.btn-small {
+        padding: variables.$spacing-small variables.$spacing-medium;
+        font-size: variables.$font-size-small;
+    }
+
+    &.btn-large {
+        padding: variables.$spacing-large variables.$spacing-large;
+        font-size: variables.$font-size-large;
+    }
+
+    &.btn-primary {
+        background-color: variables.$primary-color;
+        border-color: variables.$primary-color;
+        color: variables.$light-color;
+
+        &:hover {
+            background-color: scale-color(variables.$primary-color, $lightness: 10%);
+            border-color: scale-color(variables.$primary-color, $lightness: 10%);
+        }
+    }
+
+    &.btn-danger {
+        background-color: variables.$danger-color;
+        border-color: variables.$danger-color;
+        color: variables.$light-color;
+
+        &:hover {
+            background-color: scale-color(variables.$danger-color, $lightness: -10%);
+            border-color: scale-color(variables.$danger-color, $lightness: -10%);
+        }
+    }
+    
+    &.btn-block {
+        display: block;
+        width: 100%;
     }
 }

@@ -1,3 +1,67 @@
+@use "variables";
+
+// Text color utilities
+.text-primary {
+    color: variables.$primary-color;
+}
+.text-secondary {
+    color: variables.$secondary-color;
+}
+.text-danger {
+    color: variables.$danger-color;
+}
+.text-warning {
+    color: variables.$warning-color;
+}
+.text-light {
+    color: variables.$light-color;
+}
+.text-dark {
+    color: variables.$dark-color;
+}
+
+// Background color utilities
+.bg-primary {
+    background-color: variables.$primary-color;
+}
+.bg-secondary {
+    background-color: variables.$secondary-color;
+}
+.bg-danger {
+    background-color: variables.$danger-color;
+}
+.bg-warning {
+    background-color: variables.$warning-color;
+}
+.bg-light {
+    background-color: variables.$light-color;
+}
+.bg-dark {
+    background-color: variables.$dark-color;
+}
+
+// Border color utilities
+.border-primary {
+    border-color: variables.$primary-color;
+}
+.border-secondary {
+    border-color: variables.$secondary-color;
+}
+.border-danger {
+    border-color: variables.$danger-color;
+}
+.border-warning {
+    border-color: variables.$warning-color;
+}
+.border-light {
+    border-color: variables.$light-color;
+}
+.border-dark {
+    border-color: variables.$dark-color;
+}
+
+// Text alignment utilities
+=======
 @use "colors";
 @use "variables";
 
@@ -18,7 +82,7 @@
         border-color: #{$color};
     }
 }
-
+//liams
 .text-center {
     text-align: center;
 }
@@ -30,7 +94,109 @@
 .text-left {
     text-align: left;
 }
+//^
+// Margin utilities
+.m-small {
+    margin: variables.$spacing-small;
+}
+.m-medium {
+    margin: variables.$spacing-medium;
+}
+.m-large {
+    margin: variables.$spacing-large;
+}
 
+.mt-small {
+    margin-top: variables.$spacing-small;
+}
+.mt-medium {
+    margin-top: variables.$spacing-medium;
+}
+.mt-large {
+    margin-top: variables.$spacing-large;
+}
+
+.mb-small {
+    margin-bottom: variables.$spacing-small;
+}
+.mb-medium {
+    margin-bottom: variables.$spacing-medium;
+}
+.mb-large {
+    margin-bottom: variables.$spacing-large;
+}
+
+.ml-small {
+    margin-left: variables.$spacing-small;
+}
+.ml-medium {
+    margin-left: variables.$spacing-medium;
+}
+.ml-large {
+    margin-left: variables.$spacing-large;
+}
+
+.mr-small {
+    margin-right: variables.$spacing-small;
+}
+.mr-medium {
+    margin-right: variables.$spacing-medium;
+}
+.mr-large {
+    margin-right: variables.$spacing-large;
+}
+
+// Padding utilities
+.p-small {
+    padding: variables.$spacing-small;
+}
+.p-medium {
+    padding: variables.$spacing-medium;
+}
+.p-large {
+    padding: variables.$spacing-large;
+}
+
+.pt-small {
+    padding-top: variables.$spacing-small;
+}
+.pt-medium {
+    padding-top: variables.$spacing-medium;
+}
+.pt-large {
+    padding-top: variables.$spacing-large;
+}
+
+.pb-small {
+    padding-bottom: variables.$spacing-small;
+}
+.pb-medium {
+    padding-bottom: variables.$spacing-medium;
+}
+.pb-large {
+    padding-bottom: variables.$spacing-large;
+}
+
+.pl-small {
+    padding-left: variables.$spacing-small;
+}
+.pl-medium {
+    padding-left: variables.$spacing-medium;
+}
+.pl-large {
+    padding-left: variables.$spacing-large;
+}
+
+.pr-small {
+    padding-right: variables.$spacing-small;
+}
+.pr-medium {
+    padding-right: variables.$spacing-medium;
+}
+.pr-large {
+    padding-right: variables.$spacing-large;
+}
+=======
 @each $name, $color in colors.$colors {
     .border-#{$name} {
         border: 1px solid #{$color};  
