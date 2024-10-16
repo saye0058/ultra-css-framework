@@ -1,12 +1,3 @@
-.btn{
-    border: $button-border-radius;
-    background-color: $secondary-color;
-    color: $primary-color;
-
-    &.hover{
-        background-color: $warning-color;
-    }
-}
 
 // Button styles - Serhat
 .btn {
@@ -64,3 +55,12 @@
 
 }
 
+.btn{
+    border: $button-border-radius;
+    background-color: $secondary-color;
+    color: $primary-color;
+
+    &.hover{
+        background-color: $warning-color;
+    }
+}
