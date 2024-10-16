@@ -1,0 +1,116 @@
+@use "colors";
+@use "variables";
+
+@each $name, $color in colors.$colors {
+    .text-#{$name} {
+        color: #{$color};
+    }
+}
+
+@each $name, $color in colors.$colors {
+    .bg-#{$name} {
+        background-color: #{$color};
+    }
+}
+
+@each $name, $color in colors.$colors {
+    .border-#{$name} {
+        border-color: #{$color};
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+@each $name, $color in colors.$colors {
+    .border-#{$name} {
+        border: 1px solid #{$color};  
+    }
+}
+
+@each $key, $value in variables.$spacing {
+    .m-#{$key} {
+        margin: #{$value};
+    }
+
+    .mt-#{$key} {
+        margin-top: #{$value};
+    }
+
+    .mb-#{$key} {
+        margin-bottom: #{$value};
+    }
+
+    .ml-#{$key} {
+        margin-left: #{$value};
+    }
+
+    .mr-#{$key} {
+        margin-right: #{$value};
+    }
+
+    .p-#{$key} {
+        padding: #{$value};
+    }
+
+    .pt-#{$key} {
+        padding-top: #{$value};
+    }
+
+    .pb-#{$key} {
+        padding-bottom: #{$value};
+    }
+
+    .pl-#{$key} {
+        padding-left: #{$value};
+    }
+
+    .pr-#{$key} {
+        padding-right: #{$value};
+    }
+}
+
+// Font weight utilities - Serhat
+$font-weights: (
+
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "bold": 700
+
+);
+
+@each $name, $weight in $font-weights {
+
+  .fw-#{$name} {
+    font-weight: $weight;
+  }
+
+}
+
+// Font size utilities - Serhat
+$font-sizes: (
+
+  "sm": 0.875rem,
+  "md": 1rem,
+  "lg": 1.125rem,
+  "xl": 1.25rem
+
+);
+
+@each $name, $size in $font-sizes {
+    
+  .fs-#{$name} {
+    font-size: $size;
+  }
+  
+}
