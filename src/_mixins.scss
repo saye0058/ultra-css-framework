@@ -1,0 +1,17 @@
+// mixin for creating media quearies
+
+@mixin mq($device){
+    @if $device == tablet {
+        @media(min-width: $tablet-screen-size){
+            @content;
+        }
+    } @else if $device == laptop{
+        @media(min-width: $laptop-screen-size){
+            @content;
+        }
+    } @else if $device == desktop {
+        @media(min-width: $desktop-screen-size){
+            @content;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+form{
+
+    input{
+        padding: $spacing-small;
+    }
+    
+    legend{
+    
+    }
+    
+    textarea{
+    
+    }
+
+    .dark-mode{
+        background-color: $dark-color;
+        color: $light-color;
+    }
+}
