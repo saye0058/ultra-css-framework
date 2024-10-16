@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: $spacing-medium;
+    border-color: $dark-color;
+
+    th, td{
+        border-color: $dark-color;
+    }
+
+    &.stripped{
+        tr:nth-child(odd) td{
+            background-color: $light-color;
+        }
+    }
+
+}

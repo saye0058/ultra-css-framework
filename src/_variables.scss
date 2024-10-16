@@ -1,0 +1,50 @@
+//primary font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+//secondary font
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+// colour variables
+$primary-color: #2b3333;
+$secondary-color: #0b73b8;
+$danger-color: #ff4d4d;
+$warning-color: #e47f0c;
+$light-color: #fefefe;
+$dark-color: #000;
+
+// typography variables
+$font-family-base: "Roboto", sans-serif;
+$font-family-secondary: "Inter", sans-serif;
+$font-size-base: 18px;
+$font-size-small: 16px;
+$font-size-large: 22px;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$h1-font-size: 25px;
+$h2-font-size: 22px;
+
+// spacing variables
+$spacing-small: 10px;
+$spacing-medium: 18px;
+$spacing-large: 26px;
+
+// border variables
+$border-radius: 5px;
+$border-width: 2px;
+$border-color: #dcdcdc;
+
+// button variables
+$button-padding-vertical: 10px;
+$button-padding-horizontal: 20px;
+$button-border-radius: 5px;
+
+// shadow variables
+$box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+// @media - screen sizes
+$tablet-screen-size: 980px;
+$laptop-screen-size:1200px;
+$desktop-screen-size: 1600px;
+
+//columns
+$max-column-number: 12;
