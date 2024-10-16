@@ -7,3 +7,60 @@
         background-color: $warning-color;
     }
 }
+
+// Button styles - Serhat
+.btn {
+
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+  
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+}
+  
+// Button variations- Serhat
+.btn-primary {
+
+    @extend .btn;
+    color: #fff;
+    background-color: colors.$colors("primary");
+    border-color: colors.$colors("primary");
+  
+    &:hover {
+      background-color: darken(colors.$colors("primary"), 10%);
+      border-color: darken(colors.$colors("primary"), 12.5%);
+    }
+
+}
+  
+.btn-secondary {
+
+    @extend .btn;
+    color: #fff;
+    background-color: colors.$colors("secondary");
+    border-color: colors.$colors("secondary");
+  
+    &:hover {
+      background-color: darken(colors.$colors("secondary"), 10%);
+      border-color: darken(colors.$colors("secondary"), 12.5%);
+    }
+
+}
+
