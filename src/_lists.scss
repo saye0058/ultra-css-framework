@@ -1,0 +1,15 @@
+ul{
+    list-style: disc;
+    li{
+        padding-left: $spacing-medium;
+    }
+    margin-bottom: $spacing-large;
+}
+
+ol{
+    list-style: decimal;
+    li{
+        padding-left: $spacing-medium;
+    }
+    margin-bottom: $spacing-large;
+}

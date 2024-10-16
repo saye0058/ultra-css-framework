@@ -1,0 +1,50 @@
+.container{
+    max-width: $laptop-screen-size;
+    width: 100%;
+    padding: $spacing-small;
+
+    @include mq(laptop){
+        padding: $spacing-large;
+    }
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -($spacing-small /2);
+    margin-right: -($spacing-small /2);
+
+    >div{
+        padding-left: ($spacing-small /2);
+        padding-right: ($spacing-small /2);
+
+    }
+}
+
+.col{
+
+    .col-1{
+        width: 100
+    }
+
+    .col-2{
+        width: 50%;
+    }
+
+    .col-2{
+        width: 33%;
+    }
+
+
+
+
+
+
+
+
+
+}
