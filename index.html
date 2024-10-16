@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom CSS Framework Demo</title>
+  <link rel="stylesheet" href="css/custom-css-framework.css">
+</head>
+<body>
+  <div class="container">
+    <section id="grid-demo">
+      <h2 class="text-center mb-4 mt-3">Custom CSS Framework Demo</h2>
+      <div class="row bg-primary p-3">
+        <div class="col-4 box bg-light text-dark">
+          <p>col-4</p>
+        </div>
+        <div class="col-4 box bg-secondary text-white mb-3">
+          <p>col-4</p>
+        </div>
+        <div class="col-4 box bg-accent text-dark">
+          <p>col-4</p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-6 box bg-green text-white">
+          <p>col-6</p>
+        </div>
+        <div class="col-6 box bg-red text-white">
+          <p>col-6</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="color-utilities" class="mt-5">
+      <h2 class="text-center mb-4">Color Utilities</h2>
+      <div class="row">
+        <div class="col-4 box text-primary">.text-primary</div>
+        <div class="col-4 box text-secondary">.text-secondary</div>
+        <div class="col-4 box text-accent">.text-accent</div>
+      </div>
+      <div class="row">
+        <div class="col-4 box text-red">.text-red</div>
+        <div class="col-4 box text-green">.text-green</div>
+        <div class="col-4 box text-blue">.text-blue</div>
+      </div>
+    </section>
+
+    <section id="background-utilities" class="mt-5">
+      <h2 class="text-center mb-4">Background Utilities</h2>
+      <div class="row">
+        <div class="col-4 box bg-primary text-white">.bg-primary</div>
+        <div class="col-4 box bg-secondary text-white">.bg-secondary</div>
+        <div class="col-4 box bg-accent text-dark">.bg-accent</div>
+      </div>
+      <div class="row">
+        <div class="col-4 box bg-yellow text-dark">.bg-yellow</div>
+        <div class="col-4 box bg-orange text-white">.bg-orange</div>
+        <div class="col-4 box bg-purple text-white">.bg-purple</div>
+      </div>
+    </section>
+
+    <section id="border-utilities" class="mt-5">
+      <h2 class="text-center mb-4">Border Utilities</h2>
+      <div class="row">
+        <div class="col-4 box border-primary text-primary">.border-primary</div>
+        <div class="col-4 box border-secondary text-secondary">.border-secondary</div>
+        <div class="col-4 box border-accent text-accent">.border-accent</div>
+      </div>
+      <div class="row">
+        <div class="col-4 box border-red text-red">.border-red</div>
+        <div class="col-4 box border-green text-green">.border-green</div>
+        <div class="col-4 box border-blue text-blue">.border-blue</div>
+      </div>
+    </section>
+
+    
+    <!-- New sections start here - Serhat-->
+
+    <section id="typography-demo" class="mt-5">
+      <h2 class="text-center mb-4">Typography</h2>
+      <div class="row">
+        <div class="col-6">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+        </div>
+        <div class="col-6">
+          <p>This is a paragraph with <strong>bold text</strong> and <em>italicized text</em>.</p>
+          <p>Here's a <a href="#">link</a> within a paragraph.</p>
+          <p class="text-primary">Primary text</p>
+          <p class="text-secondary">Secondary text</p>
+          <p class="fw-bold">Bold text</p>
+          <p class="fs-lg">Large font size</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="button-demo" class="mt-5">
+      <h2 class="text-center mb-4">Buttons</h2>
+      <div class="row">
+        <div class="col-12">
+          <button class="btn btn-primary mr-2">Primary Button</button>
+          <button class="btn btn-secondary mr-2">Secondary Button</button>
+          <button class="btn btn-accent mr-2">Accent Button</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="form-demo" class="mt-5">
+      <h2 class="text-center mb-4">Form Elements</h2>
+      <form>
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" class="form-control" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <div class="form-check mb-3">
+          <input type="checkbox" id="check" class="form-check-input">
+          <label for="check" class="form-check-label">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+    <section id="table-demo" class="mt-5 mb-5">
+      <h2 class="text-center mb-4">Table</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div> 
+
+</body>
+</html>
