@@ -1,0 +1,42 @@
+@use "variables";
+
+.container{
+    max-width: variables.$laptop-screen-size;
+    width: 100%;
+    padding: variables.$spacing-small;
+
+    @include mq(laptop){
+        padding: variables.$spacing-large;
+    }
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(variables.$spacing-small / 2);
+    margin-right: calc(variables.$spacing-small / 2);
+
+    >div {
+        padding-left: calc(variables.$spacing-small / 2);
+        padding-right: calc(variables.$spacing-small / 2);
+    }
+}
+
+.col{
+
+    .col-1{
+        width: 100
+    }
+
+    .col-2{
+        width: 50%;
+    }
+
+    .col-2{
+        width: 33%;
+    }
+}

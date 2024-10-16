@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.2 | 20191019
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+base {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Inter", sans-serif;
+  color: #0b73b8;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 18px;
+}
+
+blockquote {
+  background-color: #ff4d4d;
+  color: #000;
+}
+
+a {
+  color: #2b3333;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #e47f0c;
+  font-weight: 400;
+}
+
+.btn {
+  border: 5px;
+  background-color: #0b73b8;
+  color: #2b3333;
+}
+.btn.hover {
+  background-color: #e47f0c;
+}
+
+form input {
+  padding: 10px;
+}
+form .dark-mode {
+  background-color: #000;
+  color: #fefefe;
+}
+
+ul {
+  list-style: disc;
+  margin-bottom: 26px;
+}
+ul li {
+  padding-left: 18px;
+}
+
+ol {
+  list-style: decimal;
+  margin-bottom: 26px;
+}
+ol li {
+  padding-left: 18px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 10px;
+}
+@media (min-width: 1200px) {
+  .container {
+    padding: 26px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.row > div {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col .col-1 {
+  width: 100;
+}
+.col .col-2 {
+  width: 50%;
+}
+.col .col-2 {
+  width: 33%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px;
+  border-color: #000;
+}
+table th, table td {
+  border-color: #000;
+}
+table.stripped tr:nth-child(odd) td {
+  background-color: #fefefe;
+}
+
+/*# sourceMappingURL=ultra-css-framework.css.map */

@@ -113,4 +113,42 @@ small {
 
   text-align: justify;
 
+=======
+base{
+    font-family: $font-family-base;
+    color: $dark-color;
+}
+
+
+h1, h2, h3, h4, h5{
+    font-family:$font-family-secondary;
+    color: $secondary-color;
+}
+
+h1{ 
+    font-size: $h1-font-size;
+}
+
+h2{
+    font-size: $h2-font-size;
+}
+
+p{
+    font-size: $font-size-base;
+}
+
+blockquote{
+    background-color: $danger-color;
+    color: $dark-color;
+}
+
+a{
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+        color: $warning-color;
+        font-weight: $font-weight-normal;
+    }
 }
