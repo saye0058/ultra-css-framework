@@ -15,3 +15,12 @@
         }
     }
 }
+
+@mixin generate-columns($columns){
+    @for $i from 1 through $columns{
+        .col-#{$i} {
+            width: column-width($i);
+            float: left;
+        }
+    }
+}
