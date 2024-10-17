@@ -43,3 +43,8 @@
   font-weight: $font-weight;
   color: $color;
 }
+
+// gradient mixin
+@mixin gradient($color1, $color2) {
+    background: generate-gradient($color1, $color2);
+  }

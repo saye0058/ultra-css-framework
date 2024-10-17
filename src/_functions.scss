@@ -2,3 +2,6 @@
     @return calc(100% / $max-column-number) * $columns + '%';
 }
 
+@function generate-gradient($color1, $color2) {
+    @return linear-gradient(to right, $color1, $color2);
+  }

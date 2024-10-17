@@ -3,7 +3,7 @@
 # how to make changes to our framework
 
 ```bash
-sass --watch src/ultra-css-template.scss dist/ultra-css-framework.css
+sass --watch src/ultra-css-framework.scss dist/ultra-css-framework.css
 ```
 
 

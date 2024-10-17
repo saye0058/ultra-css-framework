@@ -7,4 +7,49 @@
     &.hover{
         background-color: $warning-color;
     }
-}//^
+}
+
+.btn-grad{
+    padding: $button-padding-vertical $button-padding-horizontal;
+    border-radius: $button-border-radius;
+    background: linear-gradient(to right, $primary-color, $secondary-color); 
+    color: $light-color;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background: linear-gradient(to right, $secondary-color, $primary-color); 
+    }
+
+}
+
+.btn-grad-2{
+    padding: $button-padding-vertical $button-padding-horizontal;
+    border-radius: $button-border-radius;
+    background: linear-gradient(to right, $primary-color, $secondary-color);
+    color: $light-color;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background: linear-gradient(to right, $primary-color, $primary-color);
+    }
+
+}
+
+.btn-grad-3{
+    padding: $button-padding-vertical $button-padding-horizontal;
+    border-radius: $button-border-radius;
+    background: linear-gradient(to right, $dark-color, $light-color);
+    color: $light-color;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background: linear-gradient(to right, $light-color, $dark-color); 
+    }
+
+}
