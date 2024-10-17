@@ -1,5 +1,13 @@
-@use "variables";
-=======
+//liams button
+.btn{
+    border: $button-border-radius;
+    background-color: $secondary-color;
+    color: $primary-color;
+
+    &.hover{
+        background-color: $warning-color;
+    }
+}//^
 
 // Button styles - Serhat
 .btn {
@@ -56,16 +64,6 @@
     }
 
 }
-//liams button
-.btn{
-    border: $button-border-radius;
-    background-color: $secondary-color;
-    color: $primary-color;
-
-    &.hover{
-        background-color: $warning-color;
-    }
-}//^
 
 .btn {
     display: inline-block;
