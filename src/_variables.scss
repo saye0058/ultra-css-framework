@@ -48,3 +48,51 @@ $desktop-screen-size: 1600px;
 
 //columns
 $max-column-number: 12;
+
+//rows maybe used
+//$max-row-number: 12;
+//$gap: 15px;
+//$gap-sm: 10px;
+//$gap-md: 25px;
+//$gap-lg: 50px;
+
+
+// Mixins that maybe used
+//@mixin row($gap: $gap) {
+//    display: flex;
+//    flex-wrap: wrap;
+//    margin-left: -$gap;
+//    margin-right: -$gap;
+//  
+//    & > * {
+//      padding-left: $gap;
+//      padding-right: $gap;
+//      flex: 1 0 0%;
+//      min-width: 0;
+//    }
+//  }
+//  
+//  @mixin column($columns: 1, $offset: 0) {
+//    flex: 0 0 (100% / $max-column-number) * $columns;
+//    max-width: (100% / $max-column-number) * $columns;
+//    margin-left: ($offset * (100% / $max-column-number));
+//  }
+
+// Responsive Grid another maybe example of use
+//@media (min-width: 768px) {
+//    .row {
+//      @include row($gap-sm);
+//    }
+//  }
+//  
+//  @media (min-width: 992px) {
+//    .row {
+//      @include row($gap-md);
+//    }
+//  }
+//  
+//  @media (min-width: 1200px) {
+//    .row {
+//      @include row($gap-lg);
+//    }
+//  }
