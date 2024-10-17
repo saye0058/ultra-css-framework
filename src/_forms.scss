@@ -1,0 +1,52 @@
+@use 'variables' as *;
+
+.form-group {
+  margin-bottom: $spacing-medium;
+}
+
+.form-label {
+  display: inline-block;
+  margin-bottom: $spacing-small;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: $spacing-small;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  color: $dark-color;
+  background-color: $light-color;
+  background-clip: padding-box;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:focus {
+    color: $dark-color;
+    background-color: $light-color;
+    border-color: lighten($secondary-color, 25%);
+    outline: 0;
+    box-shadow: $box-shadow;
+  }
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: $spacing-large;
+}
+
+.form-check-input {
+  position: absolute;
+  margin-top: $spacing-small;
+  margin-left: -$spacing-large;
+}
+
+.form-check-label {
+  margin-bottom: 0;
+}
